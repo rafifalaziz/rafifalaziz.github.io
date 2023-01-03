@@ -1,5 +1,12 @@
 .nav-bar {
-    display: inline;
+    text-align: right;
+    height: 40px;
+    background-color: aqua;
+    padding-top: 20px;
+}
+
+.nav-bar > .space {
+    margin-right: 20px;
 }
 
 .home {
