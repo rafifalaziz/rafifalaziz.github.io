@@ -20,3 +20,12 @@
 .contact {
     display: inline;
 }
+
+.content > .home > .description {
+    float: left;
+}
+
+.content > .home > .photograph > img {
+    width: 200px;
+    height: 100px;
+}
