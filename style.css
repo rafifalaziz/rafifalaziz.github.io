@@ -21,11 +21,30 @@
     display: inline;
 }
 
-.content > .home > .description {
-    float: left;
+.center-align {
+    text-align: center;
 }
 
-.content > .home > .photograph > img {
+.content .center-align .home {
+    text-align: center;
+    border: solid;
+    border-color: red;
+}
+
+.content > .center-align > .home > .description {
+    display: inline-block;
+}
+
+.content > .center-align > .home > .photograph {
+    display: inline-block;
+}
+
+.content > .center-align > .home > .photograph > img {
+    width: 200px;
+    height: 100px;
+}
+
+.project .project-card img{
     width: 200px;
     height: 100px;
 }
