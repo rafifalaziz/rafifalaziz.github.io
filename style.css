@@ -59,17 +59,31 @@ table {
 
 .nav-bar {
     text-align: right;
-    height: 40px;
-    background-color: aqua;
-    padding-top: 20px;
 }
 
 .nav-bar > .space {
     margin-right: 20px;
 }
 
-.home {
+.container .nav-bar .home {
     display: inline;
+    position: absolute;
+    top: 0;
+    right: 140px;
+}
+
+.container .nav-bar .project {
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 80px;
+}
+
+.container .nav-bar .contact {
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 20px;
 }
 
 .project {
@@ -86,8 +100,6 @@ table {
 
 .content .center-align .home {
     text-align: center;
-    border: solid;
-    border-color: red;
 }
 
 .content > .center-align > .home > .description {
@@ -106,4 +118,15 @@ table {
 .project .project-card img{
     width: 200px;
     height: 100px;
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    background-color: aqua;
+    height: 20px;
+    width: 100%;
 }
