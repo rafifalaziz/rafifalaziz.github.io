@@ -70,6 +70,7 @@ table {
     position: absolute;
     top: 0;
     right: 140px;
+    margin-top: 10px;
 }
 
 .container .nav-bar .project {
@@ -77,6 +78,7 @@ table {
     position: absolute;
     top: 0;
     right: 80px;
+    margin-top: 10px;
 }
 
 .container .nav-bar .contact {
@@ -84,6 +86,7 @@ table {
     position: absolute;
     top: 0;
     right: 20px;
+    margin-top: 10px;
 }
 
 .project {
@@ -125,8 +128,11 @@ table {
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
-    filter: blur(5px);
-    background-color: aqua;
-    height: 20px;
-    width: 100%;
+    filter: blur(20px);
+    background-color: #FAD881;
+    position: absolute;
+    left: -100px;
+    height: 40px;
+    width: 2000%;
+    margin-right: -10px;
 }
