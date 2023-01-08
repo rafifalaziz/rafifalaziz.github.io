@@ -132,7 +132,12 @@ table {
     background-color: #FAD881;
     position: absolute;
     left: -100px;
-    height: 40px;
+    height: 85px;
     width: 2000%;
     margin-right: -10px;
+    margin-top: -25px;
+}
+
+body {
+    background-color: aqua;
 }
