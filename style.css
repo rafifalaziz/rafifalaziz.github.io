@@ -1,52 +1,136 @@
 /*reset*/
-html, body, div, span, applet, object, iframe, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*clearfix*/
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .cf:after {
@@ -61,7 +145,7 @@ table {
     text-align: right;
 }
 
-.nav-bar > .space {
+.nav-bar>.space {
     margin-right: 20px;
 }
 
@@ -105,20 +189,20 @@ table {
     text-align: center;
 }
 
-.content > .center-align > .home > .description {
+.content>.center-align>.home>.description {
     display: inline-block;
 }
 
-.content > .center-align > .home > .photograph {
+.content>.center-align>.home>.photograph {
     display: inline-block;
 }
 
-.content > .center-align > .home > .photograph > img {
+.content>.center-align>.home>.photograph>img {
     width: 200px;
     height: 100px;
 }
 
-.project .project-card img{
+.project .project-card img {
     width: 200px;
     height: 100px;
 }
@@ -131,13 +215,17 @@ table {
     filter: blur(20px);
     background-color: #FAD881;
     position: absolute;
-    left: -100px;
     height: 85px;
-    width: 2000%;
+    width: 100%;
     margin-right: -10px;
     margin-top: -25px;
+    top: 0;
 }
 
-body {
-    background-color: aqua;
+.content {
+    height: 100vh;
+    margin-top: 70px;
+    background: rgb(32,185,195);
+    background: radial-gradient(circle, rgba(32,185,195,1) 0%, rgba(255,255,255,1) 58%);
+    background-repeat: no-repeat;
 }
