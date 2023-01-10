@@ -183,10 +183,17 @@ table {
 
 .center-align {
     text-align: center;
+    height: 100%;
+    position: relative;
 }
 
 .content .center-align .home {
-    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .content>.center-align>.home>.description {
@@ -225,7 +232,7 @@ table {
 .content {
     height: 100vh;
     margin-top: 70px;
-    background: rgb(32,185,195);
-    background: radial-gradient(circle, rgba(32,185,195,1) 0%, rgba(255,255,255,1) 58%);
+    background: rgb(32, 185, 195);
+    background: radial-gradient(circle, rgba(32, 185, 195, 1) 0%, rgba(255, 255, 255, 1) 58%);
     background-repeat: no-repeat;
 }
