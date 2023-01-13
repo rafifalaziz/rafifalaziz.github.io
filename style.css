@@ -198,10 +198,12 @@ table {
 
 .content>.center-align>.home>.description {
     display: inline-block;
+    margin-right: 100px;
 }
 
 .content>.center-align>.home>.photograph {
     display: inline-block;
+    margin-left: 100px;
 }
 
 .content>.center-align>.home>.photograph>img {
