@@ -7,7 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Demo styles -->
   <style>
     html,
@@ -75,9 +80,15 @@
           field.
         </div>
         <div class="know-me">
-          <div class="linkedin"></div>
-          <div class="github"></div>
-          <a href="#" class="cv-download">download cv</a>
+          <div class="linkedin inline-block margin-right">
+            <i class="fa fa-linkedin-square"></i>
+          </div>
+          <div class="github inline-block margin-right">
+            <i class="fa fa-github"></i>
+          </div>
+          <div class="cv-container inline-block">
+            <a href="#" class="cv-download">download cv</a>
+          </div>
         </div>
       </div>
       <div class="swiper-slide">
@@ -110,7 +121,6 @@
         </div>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
   </div>
 
   <!-- Swiper JS -->
