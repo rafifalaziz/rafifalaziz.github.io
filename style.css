@@ -92,3 +92,21 @@ a.cv-download:active {
   color: #eee;
 }
 
+@media only screen and (max-width: 750px) {
+  .introduction-description {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .introduction-description {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .home-text {
+    margin-bottom: 40px;
+  }
+}
+
