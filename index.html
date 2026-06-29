@@ -2,141 +2,155 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="style.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Demo styles -->
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-
-      /* Center slide text vertically */
-      /* display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center; */
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Horizontal Cards</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="home-text">
-          HOME
+    <div class="mobile-frame">
+        <div id="pageOne">
+            <div class="top-decoration">
+                <img class="flower flower-left" src="tmp/s.png" alt="">
+                <h1 class="banner">Wedding Invitation</h1>
+                <img class="flower flower-right" src="tmp/smirror.png" alt="">
+            </div>
+            <div class="image-wrapper">
+                <div class="monogram">
+                    <span class="letter first">R</span>
+                    <span class="letter second">R</span>
+                </div>
+
+                <img id="flower2" src="tmp/f.png" alt="">
+                <img id="flower3" src="tmp/ss.png" alt="">
+                <img id="flower4" src="tmp/ss.png" alt="">
+
+                <h2 class="mempelai">Rahma <span id="dan">&</span> Rafif</h2>
+                <img class="slide-image" src="tmp/t1.png" alt="">
+            </div>
+            <div>
+                <h3 class="kepada">
+                    Dear, <span id="guest-name"></span>
+                </h3>
+                <div class="open-btn" id="openInvitation">
+                    <i class="fa-regular fa-envelope-open"></i>
+                    <span>Open Invitation</span>
+                </div>
+            </div>
         </div>
-        <div class="introduction-title">
-          Hello, My Name is Rafif
+
+        <div id="pageTwo">
+            <img class="slide-image" src="tmp/prewed.jpeg" alt="">
+            <div>
+                <p class="aksara">ꦥꦶꦤꦁꦒꦶꦃꦲꦶꦁꦏꦠꦿꦺꦱ꧀ꦤ, ꦩꦤꦸꦁꦒꦭ꧀ꦲꦶꦁꦥꦔꦼꦱ꧀ꦠꦸ</p>
+                <p class="terjemah">(Pinanggih ing Katresnan, Manunggal ing Pangestu)</p>
+                <p class="quote">"Satuhu, katresnan ingkang sampun katakdiraken boten badhe kesasar. Ing wekdal ingkang
+                    sampurna, Gusti maringi dalan supados kalih manah pinanggih lan manunggal wonten ing ikatan suci
+                    bebrayan. Kanthi sih rahmat lan ridhaning Gusti, mugi lampah gesang punika tansah kebak berkah,
+                    katentreman, saha kabingahan ingkang langgeng."</p>
+            </div>
+            <section class="couple-section">
+
+                <h2 class="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
+
+                <p class="invite-text">
+                    You are invited to the<br>
+                    wedding of
+                </p>
+
+                <!-- Wanita -->
+                <div class="person">
+                    <h1 class="person-name">Vania Rahmawati</h1>
+                    <p class="person-desc">
+                        Putri ke 2, Bapak Sumanto & Alm. Ibu Wagiyah
+                    </p>
+                </div>
+
+                <div class="ampersand">&</div>
+
+                <!-- Pria -->
+                <div class="person">
+                    <h1 class="person-name">M. Rafif Al Aziz</h1>
+                    <p class="person-desc">
+                        Putra ke 3, Bapak Suparlan & Ibu Kasmiati
+                    </p>
+                </div>
+
+                <h2 class="date">
+                    03 AGUSTUS 2026
+                </h2>
+
+                <div class="event-box">
+
+                    <div class="event-time">
+
+                        <div class="time-item">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>16:00</span>
+                        </div>
+
+                        <div class="divider-line"></div>
+
+                        <div class="time-item">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20:00</span>
+                        </div>
+
+                    </div>
+
+                    <a class="event-place"
+                        href="https://www.google.com/maps/place/Oemah+Lesmana+Resto+%26+Venue/@-6.3146361,106.7817368,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69ef919a640673:0x6d003baaf1ab078c!8m2!3d-6.3146361!4d106.7817368!16s%2Fg%2F11lz7fr_pm?entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank">
+                        <div class="location-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <h3>Oemah Lesmana</h3>
+                            <h3>Resto & Venue</h3>
+                        </div>
+                    </a>
+
+                </div>
+
+                <p class="address">
+                    Jl. Karang Tengah Raya No.37 Lebak Bulus,<br>
+                    Kec. Cilandak, Jakarta Selatan
+                </p>
+
+            </section>
+
+            <div class="prewed-gallery">
+
+                <img class="prewed-photo" src="tmp/prewed1.jpg" alt="">
+                <img class="prewed-photo" src="tmp/prewed2.jpg" alt="">
+                <img class="prewed-photo" src="tmp/prewed3.jpg" alt="">
+                <!-- sampai 50 foto pun tidak masalah -->
+
+            </div>
+
+            <div>
+                <p class="ending">Kehadiran Bapak/Ibu/Saudara/i merupakan kebahagiaan dan kehormatan bagi kami. Semoga
+                    dapat meluangkan waktu untuk hadir, berbagi doa, dan menjadi bagian dari momen berharga dalam
+                    perjalanan hidup kami.</p>
+            </div>
+
+            <div class="flower-bottom">
+                <img id="flower5" src="tmp/b.png" alt="">
+                <img id="flower6" src="tmp/bmirror.png" alt="">
+            </div>
         </div>
-        <div class="introduction-description">
-          I'm Software Engineer from Indonesia. Adaptive person who eager to learn computer science related
-          field.
-        </div>
-        <div class="know-me">
-          <div class="linkedin inline-block margin-right">
-            <i class="fa fa-linkedin-square"></i>
-          </div>
-          <div class="github inline-block margin-right">
-            <i class="fa fa-github"></i>
-          </div>
-          <div class="cv-container inline-block">
-            <a href="Resume.pdf" class="cv-download" download>download cv</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="project-text">
-          PROJECT
-        </div>
-        <div id="project-1" class="project">
-          <div class="project-title">
-            Food Recipe API
-          </div>
-          <div class="project-description">
-            lorem ipsum
-          </div>
-        </div>
-        <div id="project-2" class="project">
-          <div class="project-title">
-            Book Rent API
-          </div>
-          <div class="project-description">
-            lorem ipsum
-          </div>
-        </div>
-        <div id="project-3" class="project">
-          <div class="project-title">
-            Transport Management API
-          </div>
-          <div class="project-description">
-            lorem ipsum
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js"></script>
+    <script src="js/script.js"></script>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      direction: "vertical",
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      mousewheel: true
-    });
-  </script>
+    <script>
+        
+    </script>
 </body>
 
 </html>
