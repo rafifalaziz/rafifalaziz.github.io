@@ -1,6 +1,3 @@
-const lenis = new Lenis({
-    autoRaf: true,
-});
 const params = new URLSearchParams(window.location.search);
 
 const guest = params.get("to");
@@ -33,6 +30,9 @@ gsap.from(
 const openBtn = document.getElementById("openInvitation");
 
 openBtn.addEventListener("click", function () {
+    const music = document.getElementById("bgMusic");
+
+    music.play();
     gsap.to("#pageOne", {
         opacity: 0,
         y: -100,
@@ -144,47 +144,13 @@ openBtn.addEventListener("click", function () {
                     y: 30,
                     opacity: 0,
                     duration: 0.6
+                }, "-=0.3")
+                .from(".joglo-wrapper", {
+                    opacity: 0,
+                    duration: 3
                 }, "-=0.3");
 
-            const photos = gsap.utils.toArray(".prewed-photo");
-
-            const tlf = gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".prewed-gallery",
-                    start: "top top",
-                    end: `+=${photos.length * window.innerHeight * 0.8}`,
-                    pin: true,
-                    scrub: 1,
-                    anticipatePin: 1
-                }
-            });
-
-            photos.forEach((photo, index) => {
-
-                if (index === 0) return;
-
-                tlf.to(photos[index - 1], {
-                    opacity: 0,
-                    x: -60,
-                    scale: 1.08,
-                    duration: 1
-                });
-
-                tlf.fromTo(photo,
-                    {
-                        opacity: 0,
-                        x: 60,
-                        scale: .9
-                    },
-                    {
-                        opacity: 1,
-                        x: 0,
-                        scale: 1,
-                        duration: 1
-                    }, "<");
-
-            });
-
+            const track = document.querySelector(".gallery-track");
         }
     });
 });

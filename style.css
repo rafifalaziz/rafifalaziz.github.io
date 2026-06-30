@@ -1,430 +1,465 @@
 @font-face {
-            font-family: "New Icon Script";
-            src: url("font/New-Icon-Script.otf") format("opentype");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "Simonetta";
-            src: url("font/Simonetta.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: #f9f6ef;
-            display: flex;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        .mobile-frame {
-            width: 100%;
-            max-width: 430px;
-            min-height: 100vh;
-            background: #f9f6ef;
-
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-
-        .slide-image {
-            width: 100%;
-            max-height: 100vh;
-            object-fit: contain;
-            display: block;
-        }
-
-        .banner {
-            color: #6a84ab;
-            margin-top: 20px;
-            font-family: "New Icon Script", cursive;
-            font-size: 25px;
-            font-weight: normal;
-            text-align: center;
-            justify-self: center;
-        }
-
-        .top-decoration {
-            display: grid;
-            grid-template-columns: 120px 1fr 120px;
-            align-items: center;
-        }
-
-        .flower {
-            width: 100px;
-        }
-
-        .flower-left {
-            justify-self: start;
-            transform: none;
-        }
-
-        .flower-right {
-            justify-self: end;
-            transform: none;
-        }
-
-        .divider {
-            width: 60px;
-            /* sesuaikan */
-        }
-
-        .letter {
-            position: absolute;
-            font-family: "New Icon Script", cursive;
-            font-size: 85px;
-            color: #6a84ab;
-            line-height: 1;
-        }
-
-        .first {
-            left: 10px;
-            top: 0;
-        }
-
-        .second {
-            left: 70px;
-            top: 35px;
-        }
-
-        .image-wrapper {
-            position: relative;
-            width: 100%;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .monogram {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 220px;
-            height: 150px;
-            z-index: 2;
-        }
-
-        #flower2 {
-            position: absolute;
-            width: 100px;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-        }
-
-        #flower3 {
-            position: absolute;
-            width: 100px;
-            top: 60%;
-            left: 30%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-        }
-
-        #flower4 {
-            position: absolute;
-            width: 100px;
-            top: 60%;
-            left: 70%;
-            z-index: 2;
-            transform: translate(-50%, -50%) scaleX(-1);
-        }
-
-        .mempelai {
-            font-family: "Simonetta", serif;
-            font-size: 20px;
-            color: #c95445;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            width: 135px;
-            top: 80%;
-            left: 50%;
-            z-index: 2;
-        }
-
-        #dan {
-            font-family: "New Icon Script", cursive;
-            font-size: 20px;
-            color: #6a84ab;
-            line-height: 1;
-        }
-
-        .kepada {
-            font-family: "Simonetta", serif;
-            color: #6a84ab;
-            font-size: 15px;
-            text-align: center;
-        }
-
-        .open-btn {
-            display: flex;
-            width: fit-content;
-            align-items: center;
-            gap: 10px;
-            padding: 12px 24px;
-            background: #c95445;
-            color: white;
-            border-radius: 999px;
-            cursor: pointer;
-            font-family: "Simonetta", serif;
-            font-size: 16px;
-            margin: 10px auto 0;
-            margin-bottom: 20px;
-            /* membuat tombol berada di tengah */
-        }
-
-        .open-btn i {
-            font-size: 18px;
-        }
-
-        #pageTwo {
-            display: none;
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
-
-        .aksara {
-            font-family: "New Icon Script", cursive;
-            font-size: 15px;
-            color: #6a84ab;
-            text-align: center;
-            padding: 15px;
-        }
-
-        .terjemah {
-            font-family: "Simonetta", serif;
-            font-size: 15px;
-            color: #6a84ab;
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 15px;
-            width: 200px;
-            margin: 0 auto;
-        }
-
-        .quote {
-            font-family: "Simonetta", serif;
-            font-size: 15px;
-            color: #c95445;
-            text-align: center;
-            padding: 15px;
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        #flower5 {
-            position: absolute;
-            left: -10px;
-            bottom: 0;
-            width: 120px;
-            transform: rotate(12deg);
-            transform-origin: bottom left;
-        }
-
-        #flower6 {
-            position: absolute;
-            right: -10px;
-            bottom: 0;
-            width: 120px;
-            transform: rotate(-12deg);
-            transform-origin: bottom right;
-        }
-
-        .flower-bottom {
-            position: fixed;
-            left: 50%;
-            bottom: 0;
-
-            width: 100%;
-            max-width: 430px;
-            height: 170px;
-
-            transform: translateX(-50%);
-
-            pointer-events: none;
-            z-index: 999;
-        }
-
-        .couple-section {
-            padding: 40px 25px 60px;
-            background: #f9f6ef;
-            text-align: center;
-            margin-top: 250px;
-        }
-
-        .ornament-top {
-            width: 220px;
-            margin: auto;
-            display: block;
-            margin-bottom: 20px;
-        }
-
-        .bismillah {
-            font-family: "Simonetta";
-            color: #6a84ab;
-            font-size: 34px;
-            font-weight: normal;
-            margin-bottom: 20px;
-        }
-
-        .invite-text {
-            color: #c95445;
-            font-family: "Simonetta";
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 25px;
-        }
-
-        .person {
-            margin-bottom: 20px;
-        }
-
-        .person-name {
-            font-family: "New Icon Script";
-            color: #6a84ab;
-            font-size: 40px;
-            font-weight: normal;
-            line-height: 1;
-        }
-
-        .person-desc {
-            font-family: "Simonetta";
-            color: #6a84ab;
-            font-size: 16px;
-            margin-top: 10px;
-            line-height: 1.5;
-        }
-
-        .ampersand {
-            font-family: "New Icon Script";
-            color: #6a84ab;
-            font-size: 60px;
-            margin: 10px 0;
-        }
-
-        .date {
-            margin: 45px 0;
-            font-family: "Simonetta";
-            color: #c95445;
-            font-size: 44px;
-            font-weight: normal;
-            letter-spacing: 3px;
-        }
-
-        .event-box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 25px;
-            margin-bottom: 45px;
-        }
-
-        .event-time {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .time-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 26px;
-            color: #6a84ab;
-            font-family: "Simonetta";
-        }
-
-        .divider-line {
-            width: 2px;
-            height: 70px;
-            background: #6a84ab;
-            margin: 15px 0;
-        }
-
-        .location-icon {
-            font-size: 32px;
-            color: #6a84ab;
-        }
-
-        .event-place {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            text-align: left;
-            text-decoration: none;
-            cursor: pointer;
-            transition: transform .25s ease, opacity .25s ease;
-        }
-
-        .event-place:hover {
-            transform: scale(1.03);
-            opacity: .85;
-        }
-
-        .event-place h3,
-        .event-place .location-icon {
-            color: #6a84ab;
-        }
-
-        .address {
-            color: #6a84ab;
-            font-family: "Simonetta";
-            font-size: 20px;
-            line-height: 1.8;
-        }
-
-        .prewed-gallery {
-            position: relative;
-
-            width: 100%;
-            height: 100vh;
-            /* satu layar penuh */
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            overflow: hidden;
-            background: #f9f6ef;
-        }
-
-        .prewed-photo {
-            position: absolute;
-
-            width: 80%;
-            max-width: 340px;
-            max-height: 75vh;
-
-            object-fit: cover;
-            border-radius: 20px;
-
-            box-shadow: 0 20px 40px rgba(0, 0, 0, .15);
-
-            opacity: 0;
-            transform: scale(.9);
-        }
-
-        .prewed-photo:first-child {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        .ending {
-            width: 85%;
-            margin: 0 auto 80px;
-            text-align: center;
-            color: #6a84ab;
-            font-family: "Simonetta";
-            font-size: 18px;
-            line-height: 1.8;
-        }
+    font-family: "New Icon Script";
+    src: url("font/New-Icon-Script.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Simonetta";
+    src: url("font/Simonetta.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f9f6ef;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.mobile-frame {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    background: #f9f6ef;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.slide-image {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: contain;
+    display: block;
+}
+
+.banner {
+    color: #6a84ab;
+    margin-top: 20px;
+    font-family: "New Icon Script", cursive;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    justify-self: center;
+}
+
+.top-decoration {
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    align-items: center;
+}
+
+.flower {
+    width: 100px;
+}
+
+.flower-left {
+    justify-self: start;
+    transform: none;
+}
+
+.flower-right {
+    justify-self: end;
+    transform: none;
+}
+
+.divider {
+    width: 60px;
+    /* sesuaikan */
+}
+
+.letter {
+    position: absolute;
+    font-family: "New Icon Script", cursive;
+    font-size: 85px;
+    color: #6a84ab;
+    line-height: 1;
+}
+
+.first {
+    left: 10px;
+    top: 0;
+}
+
+.second {
+    left: 70px;
+    top: 35px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.monogram {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    height: 150px;
+    z-index: 2;
+}
+
+#flower2 {
+    position: absolute;
+    width: 100px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#flower3 {
+    position: absolute;
+    width: 100px;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#flower4 {
+    position: absolute;
+    width: 100px;
+    top: 60%;
+    left: 70%;
+    z-index: 2;
+    transform: translate(-50%, -50%) scaleX(-1);
+}
+
+.mempelai {
+    font-family: "Simonetta", serif;
+    font-size: 20px;
+    color: #c95445;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 135px;
+    top: 80%;
+    left: 50%;
+    z-index: 2;
+}
+
+#dan {
+    font-family: "New Icon Script", cursive;
+    font-size: 20px;
+    color: #6a84ab;
+    line-height: 1;
+}
+
+.kepada {
+    font-family: "Simonetta", serif;
+    color: #6a84ab;
+    font-size: 15px;
+    text-align: center;
+}
+
+.open-btn {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: #c95445;
+    color: white;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: "Simonetta", serif;
+    font-size: 16px;
+    margin: 10px auto 0;
+    margin-bottom: 20px;
+    /* membuat tombol berada di tengah */
+}
+
+.open-btn i {
+    font-size: 18px;
+}
+
+#pageTwo {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.aksara {
+    font-family: "New Icon Script", cursive;
+    font-size: 15px;
+    color: #6a84ab;
+    text-align: center;
+    padding: 15px;
+}
+
+.terjemah {
+    font-family: "Simonetta", serif;
+    font-size: 15px;
+    color: #6a84ab;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.quote {
+    font-family: "Simonetta", serif;
+    font-size: 15px;
+    color: #c95445;
+    text-align: center;
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#flower5 {
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 120px;
+    transform: rotate(12deg);
+    transform-origin: bottom left;
+}
+
+#flower6 {
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 120px;
+    transform: rotate(-12deg);
+    transform-origin: bottom right;
+}
+
+.flower-bottom {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+
+    width: 100%;
+    max-width: 430px;
+    height: 170px;
+
+    transform: translateX(-50%);
+
+    pointer-events: none;
+    z-index: 999;
+}
+
+.couple-section {
+    padding: 40px 25px 60px;
+    background: #f9f6ef;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.ornament-top {
+    width: 220px;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.bismillah {
+    font-family: "Simonetta";
+    color: #6a84ab;
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.invite-text {
+    color: #c95445;
+    font-family: "Simonetta";
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.person {
+    margin-bottom: 20px;
+}
+
+.person-name {
+    font-family: "New Icon Script";
+    color: #6a84ab;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.person-desc {
+    font-family: "Simonetta";
+    color: #6a84ab;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.ampersand {
+    font-family: "New Icon Script";
+    color: #6a84ab;
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.date {
+    margin: 45px 0;
+    font-family: "Simonetta";
+    color: #c95445;
+    font-size: 44px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.event-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.event-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 26px;
+    color: #6a84ab;
+    font-family: "Simonetta";
+}
+
+.divider-line {
+    width: 2px;
+    height: 70px;
+    background: #6a84ab;
+    margin: 15px 0;
+}
+
+.location-icon {
+    font-size: 32px;
+    color: #6a84ab;
+}
+
+.event-place {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform .25s ease, opacity .25s ease;
+}
+
+.event-place:hover {
+    transform: scale(1.03);
+    opacity: .85;
+}
+
+.event-place h3,
+.event-place .location-icon {
+    color: #6a84ab;
+}
+
+.address {
+    color: #6a84ab;
+    font-family: "Simonetta";
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+.ending {
+    width: 85%;
+    margin: 20px auto 80px;
+    text-align: center;
+    color: #6a84ab;
+    font-family: "Simonetta";
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.prewed-gallery {
+    overflow: hidden;
+    width: 100%;
+}
+
+.gallery-track {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+
+    animation: marquee 40s linear infinite;
+}
+
+.prewed-photo {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.joglo-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joglo {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+}
+
+/* Bunga kiri */
+#flower7 {
+    position: absolute;
+    left: -70px;
+    bottom: 0;
+    width: 180px;
+    z-index: 2;
+}
+
+/* Bunga kanan */
+#flower8 {
+    position: absolute;
+    right: -70px;
+    bottom: 0;
+    width: 180px;
+    z-index: 2;
+}
+
+/* Kupu-kupu di atas bunga kanan */
+#butterfly {
+    position: absolute;
+    right: 40px;
+    bottom: 180px;
+    width: 70px;
+    z-index: 3;
+}
