@@ -154,3 +154,19 @@ openBtn.addEventListener("click", function () {
         }
     });
 });
+
+const modal = document.getElementById("giftModal");
+
+document.getElementById("openGiftModal").onclick = () => {
+    modal.style.display = "flex";
+};
+
+document.getElementById("closeGiftModal").onclick = () => {
+    modal.style.display = "none";
+};
+
+window.onclick = (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+};

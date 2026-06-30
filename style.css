@@ -463,3 +463,140 @@ body {
     width: 70px;
     z-index: 3;
 }
+
+.gift-section {
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.gift-title {
+    font-family: "New Icon Script";
+    color: #6a84ab;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+.gift-text {
+    margin-top: 15px;
+    color: #6a84ab;
+    font-family: "Simonetta";
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.gift-btn {
+    margin-top: 25px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 999px;
+    background: #c95445;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Simonetta";
+    font-size: 16px;
+    transition: .3s;
+}
+
+.gift-btn:hover {
+    transform: translateY(-2px);
+    opacity: .9;
+}
+
+.gift-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .5);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.gift-content {
+    width: 90%;
+    max-width: 350px;
+    background: #f9f6ef;
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+}
+
+.gift-content h3 {
+    text-align: center;
+    color: #6a84ab;
+    font-family: "Simonetta";
+    margin-bottom: 20px;
+}
+
+.bank-card {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.bank-card h4 {
+    color: #c95445;
+    margin-bottom: 8px;
+}
+
+.rekening {
+    font-size: 22px;
+    font-weight: bold;
+    color: #6a84ab;
+    margin-bottom: 6px;
+}
+
+.close-modal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.bismillah-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 80px 20px 40px;
+    text-align: center;
+}
+
+.top-ornament {
+    width: 220px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.side-ornament {
+    position: absolute;
+    width: 90px;
+    top: 50px;
+}
+
+.side-ornament.left {
+    left: 10px;
+}
+
+.side-ornament.right {
+    right: 10px;
+}
+
+.bismillah {
+    font-family: "Simonetta";
+    color: #6a84ab;
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.invite-text {
+    font-family: "Simonetta";
+    color: #c95445;
+    font-size: 22px;
+    line-height: 1.5;
+}
