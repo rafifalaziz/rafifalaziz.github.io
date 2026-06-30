@@ -1,12 +1,13 @@
 const params = new URLSearchParams(window.location.search);
+let guest = params.get("to") || "Tamu Undangan";
 
-const guest = params.get("to");
+guest = guest
+    .replace(/[^\p{L}\p{N}\s&.,'-]/gu, "")
+    .trim()
+    .slice(0, 50);
 
-if (guest) {
-    document.getElementById("guest-name").textContent = guest;
-} else {
-    document.getElementById("guest-name").textContent = "Tamu Undangan";
-}
+document.getElementById("guest-name").textContent =
+    guest || "Tamu Undangan";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.fromTo(
