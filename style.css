@@ -145,7 +145,8 @@ body {
     color: #c95445;
     position: absolute;
     transform: translate(-50%, -50%);
-    width: 135px;
+    text-align: center;
+    width: 200px;
     top: 80%;
     left: 50%;
     z-index: 2;
@@ -544,11 +545,42 @@ body {
     margin-bottom: 8px;
 }
 
+.rekening-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
 .rekening {
     font-size: 22px;
     font-weight: bold;
     color: #6a84ab;
-    margin-bottom: 6px;
+    margin: 0;
+}
+
+.copy-btn {
+    border: none;
+    background: #6a84ab;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .25s;
+}
+
+.copy-btn:hover {
+    transform: scale(1.1);
+    background: #4f6f99;
+}
+
+.copy-btn i {
+    font-size: 16px;
 }
 
 .close-modal {

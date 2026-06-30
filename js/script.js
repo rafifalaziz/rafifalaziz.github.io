@@ -170,3 +170,9 @@ window.onclick = (e) => {
         modal.style.display = "none";
     }
 };
+
+function copyRekening(id) {
+    const rekening = document.getElementById(id).textContent;
+
+    navigator.clipboard.writeText(rekening);
+}
